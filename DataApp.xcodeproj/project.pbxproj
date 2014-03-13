@@ -22,6 +22,7 @@
 		FE7BF07F18D13555000F31FC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7BF06318D13555000F31FC /* CoreData.framework */; };
 		FE7BF08718D13555000F31FC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FE7BF08518D13555000F31FC /* InfoPlist.strings */; };
 		FE7BF08918D13555000F31FC /* DataAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7BF08818D13555000F31FC /* DataAppTests.m */; };
+		FE7BF09318D13807000F31FC /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE7BF09218D13807000F31FC /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		FE7BF08418D13555000F31FC /* DataAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DataAppTests-Info.plist"; sourceTree = "<group>"; };
 		FE7BF08618D13555000F31FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FE7BF08818D13555000F31FC /* DataAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataAppTests.m; sourceTree = "<group>"; };
+		FE7BF09218D13807000F31FC /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 		FE7BF05118D13554000F31FC = {
 			isa = PBXGroup;
 			children = (
+				FE7BF09418D1380F000F31FC /* Model */,
 				FE7BF06518D13555000F31FC /* DataApp */,
 				FE7BF08218D13555000F31FC /* DataAppTests */,
 				FE7BF05C18D13555000F31FC /* Frameworks */,
@@ -151,6 +154,14 @@
 				FE7BF08518D13555000F31FC /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FE7BF09418D1380F000F31FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FE7BF09218D13807000F31FC /* Storyboard.storyboard */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +241,7 @@
 			files = (
 				FE7BF06A18D13555000F31FC /* InfoPlist.strings in Resources */,
 				FE7BF07518D13555000F31FC /* Images.xcassets in Resources */,
+				FE7BF09318D13807000F31FC /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
