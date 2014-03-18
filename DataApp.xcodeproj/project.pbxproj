@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE2928EA18D82F65005BCC81 /* DataInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE2928E918D82F65005BCC81 /* DataInputViewController.m */; };
 		FE7BF05E18D13555000F31FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7BF05D18D13555000F31FC /* Foundation.framework */; };
 		FE7BF06018D13555000F31FC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7BF05F18D13555000F31FC /* CoreGraphics.framework */; };
 		FE7BF06218D13555000F31FC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7BF06118D13555000F31FC /* UIKit.framework */; };
@@ -23,6 +24,9 @@
 		FE7BF08718D13555000F31FC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FE7BF08518D13555000F31FC /* InfoPlist.strings */; };
 		FE7BF08918D13555000F31FC /* DataAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7BF08818D13555000F31FC /* DataAppTests.m */; };
 		FE7BF09318D13807000F31FC /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE7BF09218D13807000F31FC /* Storyboard.storyboard */; };
+		FE7BF0A418D16419000F31FC /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7BF0A318D16419000F31FC /* CoreDataHelper.m */; };
+		FE7BF0AA18D193F7000F31FC /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7BF0A918D193F7000F31FC /* Item.m */; };
+		FE7BF0AE18D19DA5000F31FC /* EntryTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FE7BF0AD18D19DA5000F31FC /* EntryTableTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FE2928E818D82F65005BCC81 /* DataInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataInputViewController.h; sourceTree = "<group>"; };
+		FE2928E918D82F65005BCC81 /* DataInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataInputViewController.m; sourceTree = "<group>"; };
 		FE7BF05A18D13555000F31FC /* DataApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE7BF05D18D13555000F31FC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FE7BF05F18D13555000F31FC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,6 +61,12 @@
 		FE7BF08618D13555000F31FC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FE7BF08818D13555000F31FC /* DataAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataAppTests.m; sourceTree = "<group>"; };
 		FE7BF09218D13807000F31FC /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		FE7BF0A218D16419000F31FC /* CoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataHelper.h; sourceTree = "<group>"; };
+		FE7BF0A318D16419000F31FC /* CoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataHelper.m; sourceTree = "<group>"; };
+		FE7BF0A818D193F7000F31FC /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		FE7BF0A918D193F7000F31FC /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		FE7BF0AC18D19DA5000F31FC /* EntryTableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EntryTableTableViewController.h; path = ../EntryTableTableViewController.h; sourceTree = "<group>"; };
+		FE7BF0AD18D19DA5000F31FC /* EntryTableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EntryTableTableViewController.m; path = ../EntryTableTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +98,7 @@
 		FE7BF05118D13554000F31FC = {
 			isa = PBXGroup;
 			children = (
+				FE7BF09B18D16383000F31FC /* Data */,
 				FE7BF09418D1380F000F31FC /* Model */,
 				FE7BF06518D13555000F31FC /* DataApp */,
 				FE7BF08218D13555000F31FC /* DataAppTests */,
@@ -118,10 +131,13 @@
 		FE7BF06518D13555000F31FC /* DataApp */ = {
 			isa = PBXGroup;
 			children = (
+				FE7BF0AC18D19DA5000F31FC /* EntryTableTableViewController.h */,
+				FE7BF0AD18D19DA5000F31FC /* EntryTableTableViewController.m */,
+				FE2928E818D82F65005BCC81 /* DataInputViewController.h */,
+				FE2928E918D82F65005BCC81 /* DataInputViewController.m */,
 				FE7BF06E18D13555000F31FC /* AppDelegate.h */,
 				FE7BF06F18D13555000F31FC /* AppDelegate.m */,
 				FE7BF07418D13555000F31FC /* Images.xcassets */,
-				FE7BF07118D13555000F31FC /* DataApp.xcdatamodeld */,
 				FE7BF06618D13555000F31FC /* Supporting Files */,
 			);
 			path = DataApp;
@@ -159,9 +175,21 @@
 		FE7BF09418D1380F000F31FC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				FE7BF07118D13555000F31FC /* DataApp.xcdatamodeld */,
 				FE7BF09218D13807000F31FC /* Storyboard.storyboard */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		FE7BF09B18D16383000F31FC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FE7BF0A818D193F7000F31FC /* Item.h */,
+				FE7BF0A918D193F7000F31FC /* Item.m */,
+				FE7BF0A218D16419000F31FC /* CoreDataHelper.h */,
+				FE7BF0A318D16419000F31FC /* CoreDataHelper.m */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,8 +288,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE7BF0A418D16419000F31FC /* CoreDataHelper.m in Sources */,
 				FE7BF07318D13555000F31FC /* DataApp.xcdatamodeld in Sources */,
+				FE2928EA18D82F65005BCC81 /* DataInputViewController.m in Sources */,
 				FE7BF07018D13555000F31FC /* AppDelegate.m in Sources */,
+				FE7BF0AE18D19DA5000F31FC /* EntryTableTableViewController.m in Sources */,
+				FE7BF0AA18D193F7000F31FC /* Item.m in Sources */,
 				FE7BF06C18D13555000F31FC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,6 +491,7 @@
 				FE7BF08E18D13555000F31FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FE7BF08F18D13555000F31FC /* Build configuration list for PBXNativeTarget "DataAppTests" */ = {
 			isa = XCConfigurationList;
@@ -467,6 +500,7 @@
 				FE7BF09118D13555000F31FC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
@@ -477,7 +511,8 @@
 				FE7BF07218D13555000F31FC /* DataApp.xcdatamodel */,
 			);
 			currentVersion = FE7BF07218D13555000F31FC /* DataApp.xcdatamodel */;
-			path = DataApp.xcdatamodeld;
+			name = DataApp.xcdatamodeld;
+			path = DataApp/DataApp.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
